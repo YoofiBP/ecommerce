@@ -1,0 +1,113 @@
+*{
+margin: 0 auto;
+}
+
+#header {
+width: 100%;
+/* background-color: orange; */
+height: 200px;
+background-image: url('YOFSHOP.png');
+background-repeat: repeat-x;
+}
+
+#menu {
+width: 100%;
+height: 50px;
+text-align: center;
+}
+
+ul.items {
+padding: 1px 16px;
+list-style: none;
+}
+
+ul.items li {
+display: inline;
+font-size: 18px;
+}
+
+ul.items li+li:before {
+padding: 8px;
+color: black;
+content: "/\00a0"
+}
+
+ul.items li a:hover{
+color: red;
+text-decoration: underline;
+}
+
+ul.items form{
+padding-top: 5px;
+}
+
+ul.cat {
+list-style: none;
+}
+#midsection {
+width: 100%;
+/* background-color: green; */
+height: 700px;
+margin-top: 5px;
+position: relative;
+}
+
+#leftside {
+width: 20%;
+height: 100%;
+float: left;
+}
+
+#rightside {
+width: 80%;
+/* background-color: pink; */
+height: 100%;
+float: right;
+}
+
+#sidebar {
+height: 100%;
+width: 100%;
+}
+
+#breadcrumbs {
+width: 100%;
+height: 15%;
+/* background-color: yellow; */
+text-align: right;
+}
+
+#content {
+height: 85%;
+width: 100%;
+/*background-color: black;*/
+}
+
+td {
+border: 10px solid grey;
+height: 220px;
+width: 33%;
+background-color: white;
+text-align: center;
+vertical-align: top;
+}
+
+td img {
+height: 150px;
+width: 150px;
+}
+
+button {
+margin-bottom: 8px;
+}
+
+#footer {
+width: 100%;
+background-color: grey;
+margin-top: 5px;
+text-align: center;
+}
+
+#footer p {
+color: white;
+}
