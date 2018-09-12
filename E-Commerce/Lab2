@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>E-Commerce Lab Activity</title>
+  <link rel="stylesheet" href="lab2.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="menu">
+  </div>
+  <div id="midsection">
+    <div id="sidebar">
+      <div id="lefts">
+      </div>
+    </div>
+    <div id="breadcrumbs">
+      <div id="inner">
+      </div>
+    </div>
+    <div id="content"></div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
