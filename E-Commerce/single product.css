@@ -1,110 +1,191 @@
-*{
-margin: 0 auto;
+* {
+  margin: 0 auto;
 }
 
 #header {
-width: 100%;
-/* background-color: orange; */
-height: 200px;
-background-image: url('YOFSHOP.png');
-background-repeat: repeat-x;
+  width: 100%;
+  /* background-color: orange; */
+  height: 200px;
+  background-image: url('YOFSHOP.png');
+  background-repeat: repeat-x;
 }
 
 #menu {
-width: 100%;
-height: 50px;
-text-align: center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
 }
 
 ul.items {
-padding: 1px 16px;
-list-style: none;
+  padding: 1px 16px;
+  list-style: none;
 }
 
 ul.items li {
-display: inline;
-font-size: 18px;
+  display: inline;
+  font-size: 18px;
 }
 
 ul.items li+li:before {
-padding: 8px;
-color: black;
-content: "/\00a0"
+  padding: 8px;
+  color: black;
+  content: "/\00a0"
 }
 
-ul.items li a:hover{
-color: red;
-text-decoration: underline;
+ul.items li a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
-ul.items form{
-padding-top: 5px;
+ul.items form {
+  padding-top: 5px;
 }
 
 ul.cat {
-list-style: none;
+  list-style: none;
 }
 
 #midsection {
-width: 100%;
-/* background-color: green; */
-height: 700px;
-margin-top: 5px;
-position: relative
+  width: 100%;
+  /* background-color: green; */
+  height: 700px;
+  margin-top: 5px;
+  position: relative
 }
 
 #leftside {
-width: 20%;
-height: 100%;
-float: left;
+  width: 20%;
+  height: 100%;
+  float: left;
 }
 
 #rightside {
-width: 80%;
-/* background-color: pink; */
-height: 100%;
-float: right;
+  width: 80%;
+  /* background-color: pink; */
+  height: 100%;
+  float: right;
 }
 
 #sidebar {
-height: 100%;
-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #breadcrumbs {
-width: 100%;
-height: 15%;
-/* background-color: yellow; */
-text-align: right;
+  width: 100%;
+  height: 15%;
+  /* background-color: yellow; */
+  text-align: right;
 }
 
 #content {
-height: 85%;
-width: 100%;
+  height: 85%;
+  width: 100%;
+  /*background-color: black;*/
 }
 
 #footer {
-width: 100%;
-background-color: grey;
-margin-top: 5px;
-text-align: center;
+  width: 100%;
+  background-color: grey;
+  margin-top: 5px;
+  text-align: center;
 }
 
 #footer p {
-color: white;
+  color: white;
 }
 
 table {
   height: 100%;
   width: 100%;
-  background-color: red;
 }
 
 td {
   vertical-align: top;
+  border: 2px solid black;
 }
 
 .main {
   width: 450px;
   height: 450px;
+}
+
+.sub {
+  width: 100px;
+  height: 100px;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: white;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: white;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+.tg-0laxs {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }

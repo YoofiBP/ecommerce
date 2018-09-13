@@ -5,6 +5,29 @@
   <meta charset="utf-8">
   <title>E-Commerce Lab Activity</title>
   <link rel="stylesheet" href="single product.css">
+  <script>
+
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
 </head>
 
 <body>
@@ -52,19 +75,46 @@
               <a href="#">Go to cart</a>
             </div>
             <div id="content">
-              <table>
-                <tr>
-                  <td><img class="main" src="grooming-thumbnail.png"/>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </td>
-                  <td></td>
-                </tr>
-              </table>
+<table class="tg">
+  <tr>
+    <th class="tg-0lax" colspan="4" rowspan="2"><img class="main" src="grooming-thumbnail.png"/></th>
+    <th class="tg-0lax">
+      <h3>FLYCO Electric Razor Men's Shaving machine Global Voltage Single individual Floating Foil Head With Pop-up Trimmer shaver FS626</h3>
+      <br>
+      <p>800 cedis</p>
+      <br>
+      <form action="">
+        <input type="number" name="points">
+        <input type="submit" value="Add To Cart">
+      </form>
+      <br>
+      <p>Category: <a href="#">sale</a> <a href="#">cheapest</a> <a href="#">quality</a></p>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-0lax" rowspan="2">
+      <div>
+      <button class="tablinks" onclick="openCity(event, 'London')">Description</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Reviews</button>
+</div>
+  <div id="London" class="tabcontent">
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula massa sed volutpat viverra. Sed non elit lorem. Suspendisse potenti. Proin tortor nisi, pellentesque eget ipsum in, bibendum auctor metus. Curabitur eu blandit lectus. Quisque eu eros risus. Sed at est nec eros lacinia rhoncus vel et nibh. Vestibulum turpis tortor, volutpat a dapibus vitae, egestas eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In mattis dui in vestibulum sodales. In hac habitasse platea dictumst.</p>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis arcu vel enim ultricies finibus. Sed felis ante, condimentum vitae sem id, tempus sagittis metus. Vestibulum eget nunc enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum blandit purus in tincidunt bibendum. Nullam nisi ex, accumsan ut dolor id, gravida dictum quam. Vivamus luctus sapien ac nibh dignissim, pharetra consequat odio dignissim. Ut sit amet erat sit amet massa convallis condimentum quis ut massa. Aliquam ornare eros porttitor, sollicitudin lectus sit amet, aliquam ex. Praesent sit amet eros mollis, volutpat elit in, accumsan ex. Aenean sit amet metus in diam luctus eleifend et a lorem. Sed consectetur lobortis eleifend. Mauris augue mi, ultricies sit amet pharetra et, suscipit at lectus. Duis aliquet consectetur ante ut varius</p>
+  </div>
+
+<br>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0laxs"><a href="#"><img class="sub" src="flyco-electric-razor-men-039-s-shaving-machine.jpg"/></td>
+    <td class="tg-0laxs"><a href="#"><img class="sub" src="flyco-electric-razor-men-039-s-shaving-machine.jpg"/></td>
+    <td class="tg-0laxs"><a href="#"><img class="sub" src="flyco-electric-razor-men-039-s-shaving-machine.jpg"/></td>
+    <td class="tg-0laxs"><a href="#"><img class="sub" src="flyco-electric-razor-men-039-s-shaving-machine.jpg"/></td>
+  </tr>
+</table>
   </div>
 </div>
 </div>
