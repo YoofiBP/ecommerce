@@ -6,6 +6,48 @@
   <title>E-Commerce Lab Activity</title>
   <link rel="stylesheet" href="insert product.css">
   <script>
+
+    function validateAll() {
+    alert(
+      validateTitle()+ '\n' +
+      validateDescr()+ '\n' +
+      validatePrice()+
+    );
+  }
+
+  function validateTitle() {
+    var x = document.forms['prodsearch']['title'].value;
+    if (x == "") {
+      var response = "Name must be filled out"
+      return response;
+    }
+  }
+
+  function validatePrice() {
+    var x = document.forms['prodsearch']['price'].value;
+    if (x == "") {
+     var response = "Please choose a price";
+      return response;
+    }
+  }
+
+  function validateDescr() {
+    var x = document.forms['prodsearch']['descr'].value;
+    if (x == "") {
+      var response = "Please provide a Description";
+       return response;
+    }
+  }
+
+  // function validateCat(){
+  //   var x = document.getElementsByClassName('cat');
+  //   var y = x.options[x.selectedIndex].value;
+  //   if(y == "0"){
+  //     var response = "Please provide a category";
+  //     return response;
+  //   }
+  // }
+
   </script>
 </head>
 
@@ -54,27 +96,27 @@
               <a href="#">Go to cart</a>
             </div>
             <div id="content">
-              <form action="" method="post">
+              <form action="" method="post" onsubmit="return validateAll()" name="prodsearch">
                 <h1>Insert Product</h1>
-                Product title: <input type="text"></input>
+                Product title: <input type="text" name="title"></input>
                 <br>
                 <br>
                 Category: <select name="cat">
-                  <option>Cooking</option>
-                  <option>Washing</option>
+                  <option value="0">Cooking</option>
+                  <option value="1">Washing</option>
                 </select>
                 <br>
                 <br>
-                Brand: <select name="cat">
-                  <option>Cooking</option>
-                  <option>Washing</option>
+                Brand: <select name="brand">
+                  <option value="0">Cooking</option>
+                  <option value="1">Washing</option>
                 </select>
 <br>
 <br>
 Price: <input type="number" name="price">
 <br>
 <br>
-Description: <input type="textarea">
+Description: <input type="textarea" name="descr">
 <br>
 <br>
 Upload Product Images: <input type="file">
