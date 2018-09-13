@@ -6,12 +6,14 @@
   <title>E-Commerce Lab Activity</title>
   <link rel="stylesheet" href="insert product.css">
   <script>
-
     function validateAll() {
     alert(
       validateTitle()+ '\n' +
       validateDescr()+ '\n' +
-      validatePrice()+
+      validatePrice()+ '\n' +
+      validateCat()+ '\n' +
+      validateBrand()+ '\n' +
+      validateFile()
     );
   }
 
@@ -19,6 +21,10 @@
     var x = document.forms['prodsearch']['title'].value;
     if (x == "") {
       var response = "Name must be filled out"
+      return response;
+    }
+    else {
+      var response = "";
       return response;
     }
   }
@@ -29,6 +35,10 @@
      var response = "Please choose a price";
       return response;
     }
+    else {
+      var response = "";
+      return response;
+    }
   }
 
   function validateDescr() {
@@ -37,16 +47,44 @@
       var response = "Please provide a Description";
        return response;
     }
+    else {
+      var response = "";
+      return response;
+    }
   }
 
-  // function validateCat(){
-  //   var x = document.getElementsByClassName('cat');
-  //   var y = x.options[x.selectedIndex].value;
-  //   if(y == "0"){
-  //     var response = "Please provide a category";
-  //     return response;
-  //   }
-  // }
+  function validateCat(){
+    if(document.getElementById('cat').selectedIndex == "0"){
+      var response = "Please provide a category";
+      return response;
+    }
+    else {
+      var response = "";
+      return response;
+    }
+  }
+
+  function validateBrand(){
+    if(document.getElementById('brand').selectedIndex == "0"){
+      var response = "Please provide a brand";
+      return response;
+    }
+    else {
+      var response = "";
+      return response;
+    }
+  }
+
+  function validateFile(){
+    if(document.getElementById('upload').value == ""){
+      var response = "Please upload product images";
+      return response;
+    }
+    else {
+      var response = "";
+      return response;
+    }
+  }
 
   </script>
 </head>
@@ -101,15 +139,17 @@
                 Product title: <input type="text" name="title"></input>
                 <br>
                 <br>
-                Category: <select name="cat">
-                  <option value="0">Cooking</option>
-                  <option value="1">Washing</option>
+                Category: <select id="cat">
+                  <option value="0">Choose Category</option>
+                  <option value="1">Cooking</option>
+                  <option value="2">Washing</option>
                 </select>
                 <br>
                 <br>
-                Brand: <select name="brand">
-                  <option value="0">Cooking</option>
-                  <option value="1">Washing</option>
+                Brand: <select id="brand">
+                  <option value="0">Choose Category</option>
+                  <option value="1">Panasonic</option>
+                  <option value="2">Yamaha</option>
                 </select>
 <br>
 <br>
@@ -119,7 +159,7 @@ Price: <input type="number" name="price">
 Description: <input type="textarea" name="descr">
 <br>
 <br>
-Upload Product Images: <input type="file">
+Upload Product Images: <input type="file" id="upload">
 <br>
 <br>
 Key words: <input type="textarea">
