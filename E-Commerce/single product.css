@@ -44,12 +44,13 @@ padding-top: 5px;
 ul.cat {
 list-style: none;
 }
+
 #midsection {
 width: 100%;
 /* background-color: green; */
 height: 700px;
 margin-top: 5px;
-position: relative;
+position: relative
 }
 
 #leftside {
@@ -80,25 +81,6 @@ text-align: right;
 #content {
 height: 85%;
 width: 100%;
-/*background-color: black;*/
-}
-
-td {
-border: 10px solid grey;
-height: 220px;
-width: 33%;
-background-color: white;
-text-align: center;
-vertical-align: top;
-}
-
-td img {
-height: 150px;
-width: 150px;
-}
-
-button {
-margin-bottom: 8px;
 }
 
 #footer {
@@ -110,4 +92,19 @@ text-align: center;
 
 #footer p {
 color: white;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+td {
+  vertical-align: top;
+}
+
+.main {
+  width: 450px;
+  height: 450px;
 }
