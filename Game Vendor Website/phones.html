@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>E-Commerce Lab Activity</title>
+  <link rel="stylesheet" href="css/lab2.css">
+  <script src="js/cart.js">
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="menu">
+    <ul class="items">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="insert product.php">Insert Products</a></li>
+      <li><a href="productspage.php">Products</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="cart.html">Shopping Cart</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li>
+      </li>
+    </ul>
+  </div>
+  <div id="midsection">
+    <div id="leftside">
+      <div id="sidebar">
+        <h2>Browse Categories</h>
+          <br>
+          <br>
+          <ul class="cat">
+            <a href="#">Laptops</a>
+            <br>
+            <a href="#">Tablets</a>
+            <br>
+            <a href="#">Phones</a>
+            <br>
+            <a href="#">TV Sets</a>
+          </ul>
+          <br>
+          <h2>Browse Top Brands</h>
+            <br>
+            <br>
+            <ul class="cat">
+              <a href="#">Apple</a>
+              <br>
+              <a href="#">Samsung</a>
+              <br>
+              <a href="#">LG</a>
+              <br>
+              <a href="#">Xiaomi</a>
+            </ul>
+
+      </div>
+    </div>
+    <div id="rightside">
+      <div id="breadcrumbs">
+        <h1 style="display:inline">Welcome!</h1>
+        <p>Shopping cart - Total items: Total Price:</p>
+        <p>[<span id="counter"></span>]</p>
+        <button onclick="window.open('cart.html')">Go To Cart</button>
+      </div>
+      <div id="content">
+        <table style="width:100%">
+          <tr>
+            <td><img src="img/0000281_apple-iphone-7-plus_550.png" />
+              <p>iPhone 7 Plus</p>
+              <p>Ghc 1</p>
+              <button type="button" onclick="doAll(this)" name="iPhone7 Plus">Add to Cart</button>
+            </td>
+            <td><img src="img/xiaomi-redmi-4a.png" />
+              <p>iPhone 6s</p>
+              <p>Ghc 5</p>
+              <button type="button" onclick="doAll(this)" name="iPhone6s">Add to Cart</button>
+            </td>
+            <td><img src="img/58ac4b940aaa10546adf2706.png" />
+              <p>Xiaomi Redmi</p>
+              <p>Ghc 7</p>
+              <button type="button" onclick="doAll(this)" name="Xiaomi Redmi">Add to Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="img/xiaomi-redmi-4a.png" />
+              <p>Nokia Hero</p>
+              <p>Ghc 0.50</p>
+              <button type="button" onclick="doAll(this)" name="Nokia Hero">Add to Cart</button>
+            </td>
+            <td><img src="img/0000281_apple-iphone-7-plus_550.png" />
+              <p>Samsung</p>
+              <p>Ghc 10</p>
+              <button type="button" onclick="doAll(this)" name="iPhone8 Plus">Add to Cart</button>
+            </td>
+            <td><img src="img/58ac4b940aaa10546adf2706.png" />
+              <p>LG Videotron</p>
+              <p>Ghc 20</p>
+              <button type="button" onclick="doAll(this)" name="LG Videotron">Add to Cart</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <br>
+    <h2>Contact Us</h2>
+    <br><br>
+    <p>Street Address: 1 University Avenue, Berekuso, E/R</p>
+    <br>
+    <p>Postal Address: PMB CT3, Cantonments, Accra</p>
+    <br>
+    <p>Phone & Email: (T) 024 850 6381 (E) <a href="mailto:joseph.brown-pobee@ashesi.edu.gh">joseph.brown-pobee@ashesi.edu.gh</a></p>
+    <br>
+    <p>&copy; YofShop Electronics. Est 2018. All Rights Reserved</p>
+    <br>
+  </div>
+</body>
+
+</html>

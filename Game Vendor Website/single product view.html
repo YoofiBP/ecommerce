@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>E-Commerce Lab Activity</title>
+  <link rel="stylesheet" href="css/lab2.css">
+  <link rel="stylesheet" href="css/single product.css">
+  <script>
+
+    function openSub(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openImg(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+}
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="menu">
+    <ul class="items">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="insert product.php">Insert Products</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="cart.html">Shopping Cart</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li>
+        <form method="post">
+          <input type="text" name="productname">
+          <input type="submit" value="Search" />
+        </form>
+      </li>
+    </ul>
+  </div>
+  <div id="midsection">
+    <div id="leftside">
+      <div id="sidebar">
+        <h2>Browse Categories</h>
+          <br>
+          <br>
+          <ul class="cat">
+            <a href="laptops.html">Laptops</a>
+            <br>
+            <a href="tablets.html">Tablets</a>
+            <br>
+            <a href="phones.html">Phones</a>
+            <br>
+            <a href="tv.html">TV Sets</a>
+          </ul>
+          <br>
+          <h2>Browse Top Brands</h>
+            <br>
+            <br>
+            <ul class="cat">
+              <a href="phones.html">Apple</a>
+              <br>
+              <a href="tablets.html">Samsung</a>
+              <br>
+              <a href="tv.html">LG</a>
+              <br>
+              <a href="laptops.html">Xiaomi</a>
+            </ul>
+
+      </div>
+    </div>
+    <div id="rightside">
+      <div id="breadcrumbs">
+        <h1 style="display:inline">Welcome!</h1>
+        <p>Shopping cart - Total items: Total Price:</p>
+        <p>[<span id="counter"></span>]</p>
+        <button onclick="window.open('cart.html')">Go To Cart</button>
+      </div>
+      <div id="content">
+        <table class="tg">
+          <tr>
+            <th class="tg-0lax" colspan="4" rowspan="2">
+              <img id="expandedImg" style="width:400px;height:400px;" />
+            <th class="tg-0lax">
+              <h3>iPhone 7 Plus | 64GB Storage</h3>
+              <br>
+              <p>800 cedis</p>
+              <br>
+              <form action="">
+                <input type="number" name="points">
+                <input type="submit" value="Add To Cart">
+              </form>
+              <br>
+              <p>Category: <a href="#">sale</a> <a href="#">cheapest</a> <a href="#">quality</a></p>
+            </th>
+          </tr>
+          <tr>
+            <td class="tg-0lax" rowspan="2">
+              <div>
+                <button class="tablinks" onclick="openSub(event, 'Description')">Description</button>
+                <button class="tablinks" onclick="openSub(event, 'Reviews')">Reviews</button>
+              </div>
+              <div id="Description" class="tabcontent">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula massa sed volutpat viverra. Sed non elit lorem. Suspendisse potenti. Proin tortor nisi, pellentesque eget ipsum in,
+                  bibendum auctor metus. Curabitur eu blandit lectus. Quisque eu eros risus. Sed at est nec eros lacinia rhoncus vel et nibh. Vestibulum turpis tortor, volutpat a dapibus vitae, egestas eu neque. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; In mattis dui in vestibulum sodales. In hac habitasse platea dictumst.</p>
+              </div>
+
+              <div id="Reviews" class="tabcontent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis arcu vel enim ultricies finibus. Sed felis ante, condimentum vitae sem id, tempus sagittis metus. Vestibulum eget nunc enim. Interdum et malesuada fames ac
+                  ante ipsum primis in faucibus. Vestibulum blandit purus in tincidunt bibendum. Nullam nisi ex, accumsan ut dolor id, gravida dictum quam. Vivamus luctus sapien ac nibh dignissim, pharetra consequat odio dignissim. Ut sit amet erat
+                  sit amet massa convallis condimentum quis ut massa. Aliquam ornare eros porttitor, sollicitudin lectus sit amet, aliquam ex. Praesent sit amet eros mollis, volutpat elit in, accumsan ex. Aenean sit amet metus in diam luctus
+                  eleifend et a lorem. Sed consectetur lobortis eleifend. Mauris augue mi, ultricies sit amet pharetra et, suscipit at lectus. Duis aliquet consectetur ante ut varius</p>
+              </div>
+
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0laxs"><img class="sub" src="img/0000281_apple-iphone-7-plus_550.png" onclick="openImg(this);" /></td>
+            <td class="tg-0laxs"><img class="sub" src="img/iPhone-7-Plus-jet-black.png" onclick="openImg(this);" /></td>
+            <td class="tg-0laxs"><img class="sub" src="img/iphone_7plus_pure_angles_mblk_3.png" onclick="openImg(this);" /></td>
+            <td class="tg-0laxs"><img class="sub" src="img/rokglass-clear.png" onclick="openImg(this);" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <br>
+    <h2>Contact Us</h2>
+    <br><br>
+    <p>Street Address: 1 University Avenue, Berekuso, E/R</p>
+    <br>
+    <p>Postal Address: PMB CT3, Cantonments, Accra</p>
+    <br>
+    <p>Phone & Email: (T) 024 850 6381 (E) <a href="mailto:joseph.brown-pobee@ashesi.edu.gh">joseph.brown-pobee@ashesi.edu.gh</a></p>
+    <br>
+    <p>&copy; YofShop Electronics. Est 2018. All Rights Reserved</p>
+    <br>
+  </div>
+</body>
+
+</html>
